@@ -1,0 +1,25 @@
+apiVersion: 1
+datasources:
+  - name: Prometheus
+    uid: ECOTRACK_PROM
+    type: prometheus
+    access: proxy
+    url: http://172.20.4.40:9090
+    isDefault: true
+    editable: true
+
+  - name: EcoTrack-PostGIS
+    uid: ECOTRACK_PG
+    type: postgres
+    access: proxy
+    url: 172.20.3.10:5432
+    user: ecotrack
+    database: ecotrack
+    jsonData:
+      database: ecotrack
+      sslmode: disable
+      postgresVersion: 1500
+      timescaledb: false
+    secureJsonData:
+      password: ecotrack_pg_pwd
+    editable: true

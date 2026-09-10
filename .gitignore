@@ -1,0 +1,17 @@
+@'
+# Dependances
+node_modules/
+api/node_modules/
+
+# Secrets - NE JAMAIS COMMITER
+wazuh-certs/
+peer1.conf
+*.key
+*-key.pem
+.env
+certs/*.pem
+!certs/.gitkeep
+
+# Runtime & Local
+*.log
+prepare-host.ps1
