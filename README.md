@@ -2,7 +2,7 @@
 
 Secure connected-bin waste-management platform: geolocated ingestion of a sensor fleet, real-time monitoring, business KPIs, blocking-mode WAF, network IDS, SIEM, and VPN-restricted administration. The whole stack is declared in a single `docker-compose.yml` with strict network segmentation and static IPAM.
 
-A short, hands-on usage guide is available in `GUIDE.md`.
+A short, hands-on usage guide is available in `UserGuide.md`.
 
 ## Architecture
 
